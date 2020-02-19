@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FontsTest.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:local="clr-namespace:FontsTest"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackLayout>
+        <Label
+            FontFamily="{StaticResource MaterialFontFamily}"
+            FontSize="60"
+            Text="{x:Static local:IconFont.Camera}"
+            TextColor="Red" />
+        <Label
+            FontFamily="{StaticResource MaterialFontFamily}"
+            FontSize="60"
+            Text="{x:Static local:IconFont.ZodiacSagittarius}"
+            TextColor="Blue" />
+
+        <Image>
+            <Image.Source>
+                <FontImageSource
+                    FontFamily="{DynamicResource MaterialFontFamily}"
+                    Glyph="{x:Static local:IconFont.Attachment}"
+                    Size="60"
+                    Color="Green" />
+            </Image.Source>
+        </Image>
+
+    </StackLayout>
+
+</ContentPage>
